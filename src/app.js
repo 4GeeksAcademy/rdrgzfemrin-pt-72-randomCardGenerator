@@ -42,12 +42,13 @@ const generatorCard = () => {
   } else if (randomEmoji === "♥") {
     style.color = "red";
     title.innerHTML = "Heart";
-  } else (randomEmoji === "♠") {
+  } else randomEmoji === "♠";
+  {
     style.color = "black";
     title.innerHTML = "Spade";
   }
 
-  document.querySelector(".emoji").innerHTML = randomEmoji;
+  (document.querySelector().innerHTML = randomEmoji), randomNumber;
 };
 //♦
 //♣
