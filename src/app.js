@@ -7,7 +7,7 @@ import "./assets/img/4geeks.ico";
 
 //window.onload = function() {
 //btn.addEventListener("click", function() {
-//generatorCard();
+//generatorCard(HIT!);
 //});
 //};
 console.log("Hello Rigo from the console!");
@@ -31,31 +31,20 @@ const generatorCard = () => {
     "A"
   ];
   let randomEmoji = emoji[Math.floor(Math.random() * emoji.length)];
+  let randomNumber = number[Math.floor(Math.random() * number.length)];
 
-  if (randomEmoji === "💃🏽") {
-    btn.style.background = "red";
-    btn.style.color = "white";
-    title.innerHTML = "Felicia";
-  } else if (randomEmoji === "🦊") {
-    btn.style.color = "white";
-    btn.style.background = "orange";
-    title.innerHTML = "Foxy Brown";
-  } else if (randomEmoji === "🐥") {
-    btn.style.color = "black";
-    btn.style.background = "yellow";
-    title.innerHTML = "Norbert";
-  } else if (randomEmoji === "🐸") {
-    btn.style.color = "white";
-    btn.style.background = "green";
-    title.innerHTML = "Robert";
-  } else if (randomEmoji === "🪼") {
-    btn.style.color = "white";
-    btn.style.background = "blue";
-    title.innerHTML = "Welches";
-  } else {
-    btn.style.background = "purple";
-    btn.style.color = "white";
-    title.innerHTML = "Ella";
+  if (randomEmoji === "♦") {
+    style.color = "red";
+    title.innerHTML = "Dimond";
+  } else if (randomEmoji === "♣") {
+    style.color = "black";
+    title.innerHTML = "Club";
+  } else if (randomEmoji === "♥") {
+    style.color = "red";
+    title.innerHTML = "Heart";
+  } else (randomEmoji === "♠") {
+    style.color = "black";
+    title.innerHTML = "Spade";
   }
 
   document.querySelector(".emoji").innerHTML = randomEmoji;
