@@ -5,6 +5,8 @@
 .card {
   background: white;
   margin: none;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 1.25rem;
 }
 button {
   border: 3px solid transparent;
