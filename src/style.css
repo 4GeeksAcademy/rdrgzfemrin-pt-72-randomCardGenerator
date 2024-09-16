@@ -16,3 +16,11 @@
   margin-top: 10px;
   margin-left: 250px;
 }
+#topright {
+  display: 25px;
+  position: relative;
+}
+#bottomleft {
+  display: 25px;
+  position: relative;
+}

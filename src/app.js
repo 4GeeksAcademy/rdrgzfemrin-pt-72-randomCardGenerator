@@ -12,10 +12,8 @@ import "./assets/img/4geeks.ico";
 //};
 console.log("Hello Rigo from the console!");
 const generatorCard = () => {
-  let title = document.querySelector(".title");
-  let emoji = ["♦", "♣", "♥", "♠"];
+  let suit = ["♦", "♣", "♥", "♠"];
   let number = [
-    "1",
     "2",
     "3",
     "4",
@@ -30,26 +28,32 @@ const generatorCard = () => {
     "K",
     "A"
   ];
-  let randomEmoji = emoji[Math.floor(Math.random() * emoji.length)];
+  let randomSuit = suit[Math.floor(Math.random() * suit.length)];
   let randomNumber = number[Math.floor(Math.random() * number.length)];
 
-  if (randomEmoji === "♦") {
-    style.color = "red";
-    title.innerHTML = "Dimond";
-  } else if (randomEmoji === "♣") {
-    style.color = "black";
-    title.innerHTML = "Club";
-  } else if (randomEmoji === "♥") {
-    style.color = "red";
-    title.innerHTML = "Heart";
-  } else randomEmoji === "♠";
-  {
-    style.color = "black";
-    title.innerHTML = "Spade";
+  document.querySelector(".randomCardValue").innerHTML = number[number];
+  const randomSuit = document.querySelectorAll("#topright, #bottomleft");
+
+  randomSuit.forEach(randomSuit => {
+    randomSuit.innerHTML = suit[suit];
+    if (suit[suit] === "♥" || suit[suit] === "♦") {
+      cardSuit.style.color = "red";
+    } else {
+      randomSuit.style.color = "black";
+    }
+  });
+
+  const randomCardValue = document.querySelector(".randomCardValue");
+  if (suit[suit] === "♥" || suit[suit] === "♦") {
+    randomCardValue.style.color = "red";
+  } else {
+    randomCardValue.style.color = "black";
   }
 
-  (document.querySelector().innerHTML = randomEmoji), randomNumber;
+  console.log(suit[suit], numbers[number]);
 };
+//(document.querySelector().innerHTML = randomSuit), randomNumber;
+
 //♦
 //♣
 //♥
