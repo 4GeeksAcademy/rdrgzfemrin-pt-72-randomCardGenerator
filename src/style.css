@@ -3,8 +3,9 @@
   background-color: green;
 }
 .card {
+  position: flex;
   background: white;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  border: 1px solid black;
   border-radius: 1.25rem;
   margin-left: 250px;
 }
@@ -17,10 +18,15 @@
   margin-left: 250px;
 }
 #topright {
-  display: 25px;
-  position: relative;
+  display: flex;
+  justify-content: end;
+  margin-top: 1rem;
+  margin-bottom: 0;
 }
 #bottomleft {
-  display: 25px;
-  position: relative;
+  display: flex;
+}
+.test-card {
+  margin: auto;
+  
 }
