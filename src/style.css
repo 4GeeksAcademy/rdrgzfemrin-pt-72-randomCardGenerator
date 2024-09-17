@@ -3,9 +3,8 @@
   background-color: green;
 }
 .card {
-  position: flex;
   background: white;
-  border: 1px solid black;
+  border: 2px solid black;
   border-radius: 1.25rem;
   margin-left: 250px;
 }
@@ -17,16 +16,13 @@
   margin-top: 10px;
   margin-left: 250px;
 }
-#topright {
+img #bottomleft {
   display: flex;
-  justify-content: end;
-  margin-top: 1rem;
-  margin-bottom: 0;
-}
-#bottomleft {
-  display: flex;
+  margin: 0px;
+  font-size: 30px;
 }
 .test-card {
-  margin: auto;
-  
+  margin: 5px;
+  text-align: center;
+  font-size: 300px;
 }
