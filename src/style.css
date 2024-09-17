@@ -16,13 +16,19 @@
   margin-top: 10px;
   margin-left: 250px;
 }
-img #bottomleft {
+#topright {
+  display: flex;
+  justify-content: end;
+  margin: 0px;
+  font-size: 30px;
+}
+#bottomleft {
   display: flex;
   margin: 0px;
   font-size: 30px;
 }
 .test-card {
-  margin: 5px;
+  margin: 0px;
   text-align: center;
-  font-size: 300px;
+  font-size: 258px;
 }
