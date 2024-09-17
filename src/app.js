@@ -3,16 +3,12 @@ import "./style.css";
 
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
+import { Button } from "bootstrap";
 
 window.onload = function() {
-  addEventListener("click", function() {
-    generateCard();
-  });
-};
-//console.log("Hello Rigo from the console!");
-const generateCard = () => {
-  let suit = ["♦", "♣", "♥", "♠"];
-  let number = [
+  let items = ["♦", "♥", "♠", "♣"];
+  let values = [
+    "A",
     "2",
     "3",
     "4",
@@ -24,25 +20,26 @@ const generateCard = () => {
     "10",
     "J",
     "Q",
-    "K",
-    "A"
+    "K"
   ];
-  document.querySelector(".card").innerHTML = number[number];
-  const randomSuit = document.querySelectorAll("#topright, #bottomleft");
-
-  randomSuit.forEach(randomSuit => {
-    randomSuit.innerHTML = suit[suit];
-    if (suit[suit] === "♥" || suit[suit] === "♦") {
-      suit.style.color = "red";
-    } else {
-      randomSuit.style.color = "black";
-    }
-  });
-
-  const randomCard = document.querySelector(".card");
-  if (suit[suit] === "♥" || suit[suit] === "♦") {
-    randomCard.style.color = "red";
-  } else {
-    randomCard.style.color = "black";
+  function getItem(arr) {
+    return arr[Math.floor(Math.random() * arr.length)];
   }
+
+  const generateCard = () => {
+    const createdItem = getItem(items);
+    const createdValue = getItem(values);
+
+    const color = createdItem === "♦" || createdItem === "♥" ? "red" : "black";
+
+    document.getElementById("item").style.color = color;
+    document.getElementById("itemInvert").style.color = color;
+    document.getElementById("item").innerHTML = createdItem;
+    document.getElementById("itemInvert").innerHTML = createdItem;
+    document.getElementById("value").innerHTML = createdValue;
+  };
+
+  addEventListener("click", function() {
+    generateCard();
+  });
 };
