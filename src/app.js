@@ -3,7 +3,6 @@ import "./style.css";
 
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
-import { Button } from "bootstrap";
 
 window.onload = function() {
   let items = ["♦", "♥", "♠", "♣"];
@@ -39,7 +38,8 @@ window.onload = function() {
     document.getElementById("value").innerHTML = createdValue;
   };
 
-  addEventListener("click", function() {
+  let btn = document.querySelector(".btn");
+  btn.addEventListener("click", function() {
     generateCard();
   });
 };
